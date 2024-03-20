@@ -1,0 +1,76 @@
+.movie-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%; /* Ajuste para utilizar un porcentaje un poco más amplio */
+  max-width: 1200px; /* Establece un ancho máximo para que no se vea demasiado grande en pantallas muy grandes */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  margin-bottom: 200px;
+  box-sizing: border-box; /* Asegúrate de que el padding no afecte el ancho total */
+}
+
+.movie-info {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten según el tamaño de pantalla */
+  align-items: flex-start;
+  margin-top: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.movie-image {
+  flex: 1 1 300px; /* Permite que la imagen se ajuste pero manteniendo un base de 300px */
+  max-width: 300px;
+  height: auto;
+  border-right: 2px solid #ddd;
+}
+
+.movie-text {
+  flex: 2; /* Da más espacio al texto en pantallas grandes */
+  padding: 20px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.movie-text p {
+  margin: 15px 0px; /* Ajuste para que los márgenes sean consistentes y no tan anchos */
+}
+
+.movie-text p strong {
+  color: #000;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-top: 0; /* Remueve el margen superior para que se vea mejor al inicio */
+}
+
+@media (max-width: 768px) {
+  .movie-detail {
+    width: 95%; /* Aumenta el ancho en dispositivos más pequeños para usar más espacio */
+  }
+
+  .movie-info {
+    flex-direction: column;
+  }
+
+  .movie-image {
+    width: 100%;
+    max-width: none; /* Permite que la imagen se extienda completamente en pantallas pequeñas */
+    border-right: none;
+    border-bottom: 2px solid #ddd;
+  }
+
+  .movie-text {
+    padding: 15px;
+  }
+
+  .movie-text p {
+    margin: 15px 0px; /* Ajuste para reducir el espacio lateral en dispositivos móviles */
+  }
+}

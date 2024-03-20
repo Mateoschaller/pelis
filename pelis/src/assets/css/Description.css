@@ -1,0 +1,26 @@
+.description-container {
+  width: 60%;
+  margin: 0 auto; /* Centra el div */
+  text-align: center; /* Centra el texto */
+}
+
+.description-container p {
+  margin-top: 50px;
+  font-size: 1em; /* Ajusta el tamaño del texto según necesites */
+  margin-bottom: 40px; /* Espacio entre el párrafo y el enlace */
+}
+
+.encuesta-link {
+  display: inline-block; /* Para poder aplicar margin */
+  background-color: #007bff; /* Color de fondo del botón/enlace */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Espacio interior del botón/enlace */
+  text-decoration: none; /* Elimina el subrayado */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s; /* Efecto suave al cambiar el color de fondo */
+  margin-bottom: 50px;
+}
+
+.encuesta-link:hover {
+  background-color: #0056b3; /* Color al pasar el ratón por encima */
+}

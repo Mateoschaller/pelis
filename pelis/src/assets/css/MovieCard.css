@@ -1,0 +1,47 @@
+.movie-card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 10px auto; /* Centrar tarjeta */
+  width: 300px; /* Ajusta este valor según el diseño de tu sitio */
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.movie-card.enlarged {
+  transform: scale(1.05);
+}
+
+.img-movie {
+  width: 100%;
+  height: 200px; /* Ajusta según necesidad */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-movie img {
+  max-width: 100%; /* Asegura que la imagen no se salga del contenedor */
+  max-height: 100%;
+  object-fit: cover; /* Ajusta la imagen para cubrir el espacio disponible */
+  transition: transform 0.3s ease;
+}
+
+.img-movie img.enlarged {
+  transform: scale(1.1);
+}
+
+/* Estilos adicionales para el contenido de la tarjeta */
+h3, .year, .director, .genre {
+  margin: 10px 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit; /* Hace que el enlace tenga el mismo color que el texto al que envuelve */
+}
